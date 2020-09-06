@@ -1,0 +1,8 @@
+{
+  "files.associations":
+    {
+      "**/common/**/*.txt": "paradox",
+      "**/events/**/*.txt": "paradox",
+      "**/history/**/*.txt": "paradox"
+    }
+}
