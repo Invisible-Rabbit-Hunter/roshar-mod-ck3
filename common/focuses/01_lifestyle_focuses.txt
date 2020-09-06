@@ -1,0 +1,26 @@
+﻿
+martial_strategy_focus = {
+	lifestyle = martial_lifestyle
+
+	desc = {
+		desc = martial_strategy_focus_desc
+		desc = line_break
+	}
+	
+	modifier = {
+		martial = 100
+		diplomacy = 100
+	}
+
+	auto_selection_weight = {
+		value = 11
+		if = {
+			limit = {
+				has_education_martial_trigger = yes
+			}
+			add = 1989
+		}
+	}
+
+	focus_id = 3
+}
