@@ -1,229 +1,115 @@
-﻿akan_group = {
+﻿alethi_group = {
+	
 	graphical_cultures = {
-		west_african_group_coa_gfx
-		mena_building_gfx
-		african_clothing_gfx
-		sub_sahran_unit_gfx
+		indian_building_gfx
+		steppe_coa_gfx
+		mongol_coa_gfx
+		mongol_clothing_gfx
+		mongol_unit_gfx
 	}
 
 	mercenary_names = {
-		{ name = "mercenary_company_ashanti_band" }
-		{ name = "mercenary_company_company_of_the_volta" }
-		{ name = "mercenary_company_followers_of_akwei" }
+		{ name = "mercenary_company_place_horde" }
+		{ name = "mercenary_company_army_under_the_sky" }
+		{ name = "mercenary_company_mongolic_riders_of_place" }
+		{ name = "mercenary_company_true_khans_faithful" }
+		{ name = "mercenary_company_company_of_the_yurt" }
+		{ name = "mercenary_company_mongolic_riders_of_place" }
+		{ name = "mercenary_company_steppe_dancers_band" }
+		{ name = "mercenary_company_mongolic_riders_of_place" }
+		{ name = "mercenary_company_chastisement_of_place" }
+		{ name = "mercenary_company_mongolic_riders_of_place" }
+		{ name = "mercenary_company_band_of_the_father" }
+		{ name = "mercenary_company_company_of_the_goad" }
+		{ name = "mercenary_company_mongolic_riders_of_place" }
 	}
 
-	akan = {
-		color = hsv{ 0.02 0.8 0.88 }
+	alethi = {
+		
+		color = { 0.4 0.4 1.0 }
 
-		cadet_dynasty_names = {
-			"dynn_Brong" #001
-			"dynn_Bono" #002
-			"dynn_Abron" #003
-			"dynn_Kulango" #004
-			"dynn_Badu"
-			"dynn_Seikwa"
-			"dynn_Nkurange"
-			"dynn_Lorhon"
-			"dynn_Ngwela"
-			"dynn_BabE_"
-			"dynn_Oyoko" #005
-			"dynn_Abohyen"
-			"dynn_Akwapim"
-			"dynn_Adisi"
-			"dynn_Ewotre"
-			"dynn_Agwa"
-			"dynn_Kompa"
-			"dynn_Sehwi"
-			"dynn_Anwhiaso"
-			"dynn_Wiawso"
-			"dynn_Assini"
-			"dynn_Abripiquem"
-			"dynn_Ankobra"
-			"dynn_Kumasi"
-			"dynn_Kokofu"
-			"dynn_Dwaben"
-			"dynn_Nsuta"
-			"dynn_Bretuo"
-			"dynn_Mampong"
-			"dynn_Afigyaase"
+		character_modifier = {
+			ai_war_chance = 1
+			ai_war_cooldown = -0.5
 		}
 
 		dynasty_names = {
-			"dynn_Brong" #001
-			"dynn_Bono" #002
-			"dynn_Abron" #003
-			"dynn_Kulango" #004
-			"dynn_Badu"
-			"dynn_Seikwa"
-			"dynn_Nkurange"
-			"dynn_Lorhon"
-			"dynn_Ngwela"
-			"dynn_BabE_"
-			"dynn_Oyoko" #005
-			"dynn_Abohyen"
-			"dynn_Akwapim"
-			"dynn_Adisi"
-			"dynn_Ewotre"
-			"dynn_Agwa"
-			"dynn_Kompa"
-			"dynn_Sehwi"
-			"dynn_Anwhiaso"
-			"dynn_Wiawso"
-			"dynn_Assini"
-			"dynn_Abripiquem"
-			"dynn_Ankobra"
-			"dynn_Kumasi"
-			"dynn_Kokofu"
-			"dynn_Dwaben"
-			"dynn_Nsuta"
-			"dynn_Bretuo"
-			"dynn_Mampong"
-			"dynn_Afigyaase"
+			"dynn_Kholin"
+			"dynn_Sadeas"
+			"dynn_Aladar"
+			"dynn_Hatham"
+			"dynn_Thanadal"
+			"dynn_Roion"
+			"dynn_Bethab"
+			"dynn_Sebarial"
+			"dynn_Vamah"
+			"dynn_Ruthar"
 		}
 
 		male_names = {
-			Addae Adeben Adofo Adom Adusa Agyei Agyeman Agyemang Akron Akwasi Amoa Amoani Ampah Anan Anane Ankoma Anum Asamoah Ashon Ason Atoapem Awotwe Awotwi
-			Badu Berko Boadi Bodua Donkor Dubaku Ebo Ekow Enu Fiifi Gyasi Jojo Kobby Kobena Kobi Kobina Kodjo Koffi Kofi Kojo Komla Komlan Kontar Kosi Kow Kwabena Kwadwo Kwaku Kwame Kwasi Kwaw Kweku Kwesi Kwodwo Kyere
-			Manu Minkah Nkruma Nsia Nsonowa Ntonni Ogyam Okoto Okyin Osei Owusu Owusuwao Pereko Siisi Tano Yaba Yao Yaw Yawo Yoofi
+			Abagha Achigh Aguchu Ajai Ajinai Akhutai Alagh Alchi Alchidai Altan Ambaghai Arkhai Arasen Babur Badai Bagaridai Bala Barghujin Bartan Batu Bedugun Begter Belgutei
+			Belgunutei Bilge Berke Bodonchar Bogen Bogorchu Bolkhadar Borjigidai Boroghul Bughu Bugidai Bugunutei Bujeg Bukha Bulughan Buri Burkhan Burundai Chagatai Chaghagan Chanai Chigu
+			Chidukhul Chilagun Chiledu Chormakhan Chulgetei Dagun Daritai Dayir Dodai Duua Eljigedei Ghazan Ghunan Guchu Gughlug Guyug Harghasun Horkhudagh Hulegu Husun Inalchi Inancha Iturgen
+			Jajiradai Jamugha Jebe Jochi Jurchedei Khabichi Khachi Khachigun Khadagh Khagatai Khaidu Khal Khorchi Khorilartai Khubilai Khudu Khutula Khuyildar Kogsegu Kokochu Megetu Megujin
+			Menggei Mongke Morokha Munglig Nakhu Narin Nayaga Nogai Odchigin Ogodei Okhotur Oljaitu Oronartai Shiraghul Shirgugetu Subetei Suyiketu Taghai Tamachi Targhutai Temuge Temujin Temur
+			Todogen Toghoril Toghtoga Tokhtamis Tolui Torolchi Tumen Uighurtai Ukhuna Usun Yedi Yegu Yeke Yesugei Yesunge Yokhunan Kadan Godan
+			Bukhatu_Salji Bukha_Khatagi Bodonchar_Munkhag BelgU_nU_tei BegU_nU_tei Baaridai Habich_Baghatur Jeguredei Menen_TU_dU_n Hachi_HU_lU_g Baishinkhor_Dogshin Chirhya_Lynhua
+			Chaujin_Ortagai Tumbinai_Setsen Sengun_Bilge Khabul Semsochule
 		}
-
 		female_names = {
-			Aba Abena Abina Abla Abrema Adowa Adwoa Afi Afia Afua Akosi Akosiwa Akosua Aku Akua Ama Amba Ame Ameyo Amma Araba Asi Awusi Ayawa
-			Baaba Baako Baduwaa Efia Efua Ekua Esi Kaakyire Kakra Kessie Kunto Kwasiba Maanu Mansa Morowa Nkroma Nsowaa Panyin Thema Yaa Yaaba
+			Aigiarn Al-Alta Alan Alan_Gua Altani Borte Botokhui Bulughan Chabi Chagur Chakha Checheyigen Chotan Conchaka Dokez Doregene Doquz Ebegei Goland Gurbesu Hogelun Holuikhan Ibakha
+			Khadagan Khogaghchin Khojin Khorijin Khugurchin Khulan Khutulan Khutulun Kokachin Mandukhai Mongoljin Nomolun Oghul Orbei Orqina Sokhatai Sorkhaghatani Tekine Temulun TO_regene Yesugun Yesui Hoelun
 		}
 		
+		dynasty_of_location_prefix = "dynnp_of"
 		founder_named_dynasties = yes
-		
+
 		ethnicities = {
-			10 = african
+			10 = asian
 		}
 	}
-	
-	kru = {
+	veden = {
 		
-		color = hsv{ 0.015 0.95 0.7 }
+		color = { 0.4 0.4 1.0 }
 
-		cadet_dynasty_names = {
-			"dynn_Bakwe"
-			"dynn_Kodia"
-			"dynn_Godie"
-			"dynn_Wane"
-			"dynn_Neyo"
-			"dynn_Dida"
-			"dynn_Bete"
-			"dynn_We"
-			"dynn_Glio"
-			"dynn_Ubi"
-			"dynn_Gbii"
-			"dynn_Kuya"
-			"dynn_Kwadia"
-			"dynn_Kuwaa"
-			"dynn_Aizi"
+		character_modifier = {
+			ai_war_chance = 1
+			ai_war_cooldown = -0.5
 		}
+
 		dynasty_names = {
-			"dynn_Bakwe"
-			"dynn_Kodia"
-			"dynn_Godie"
-			"dynn_Wane"
-			"dynn_Neyo"
-			"dynn_Dida"
-			"dynn_Bete"
-			"dynn_We"
-			"dynn_Glio"
-			"dynn_Ubi"
-			"dynn_Gbii"
-			"dynn_Kuya"
-			"dynn_Kwadia"
-			"dynn_Kuwaa"
-			"dynn_Aizi"
+			"dynn_Kholin"
+			"dynn_Sadeas"
+			"dynn_Aladar"
+			"dynn_Hatham"
+			"dynn_Thanadal"
+			"dynn_Roion"
+			"dynn_Bethab"
+			"dynn_Sebarial"
+			"dynn_Vamah"
+			"dynn_Ruthar"
 		}
 
 		male_names = {
-			Armah Borforh Boryee Cammue Didwho Dolo Dwe Flomo Forkay
-			Garnahweh Gartee Garteh Gardiah Garyupleh Garmuyu Gboto Gbwe
-			Jlakon Kollie Konmlan Konowa Kpakelah Kpangbah Kparnkpai Kparsi
-			Lami Luogon Manhtee Monon-Konmlan Nimene Nyennoh Odeleia Paye Pennon 
-			Siakoh Soe-Tehpoe Sundaygar Teh Tehpoe Togar Toimu Togba
-			Wamah Welleh Wonlay Yakpazuah Yarkpawolo Yenseloh Zaowolo Zokaya
+			Abagha Achigh Aguchu Ajai Ajinai Akhutai Alagh Alchi Alchidai Altan Ambaghai Arkhai Arasen Babur Badai Bagaridai Bala Barghujin Bartan Batu Bedugun Begter Belgutei
+			Belgunutei Bilge Berke Bodonchar Bogen Bogorchu Bolkhadar Borjigidai Boroghul Bughu Bugidai Bugunutei Bujeg Bukha Bulughan Buri Burkhan Burundai Chagatai Chaghagan Chanai Chigu
+			Chidukhul Chilagun Chiledu Chormakhan Chulgetei Dagun Daritai Dayir Dodai Duua Eljigedei Ghazan Ghunan Guchu Gughlug Guyug Harghasun Horkhudagh Hulegu Husun Inalchi Inancha Iturgen
+			Jajiradai Jamugha Jebe Jochi Jurchedei Khabichi Khachi Khachigun Khadagh Khagatai Khaidu Khal Khorchi Khorilartai Khubilai Khudu Khutula Khuyildar Kogsegu Kokochu Megetu Megujin
+			Menggei Mongke Morokha Munglig Nakhu Narin Nayaga Nogai Odchigin Ogodei Okhotur Oljaitu Oronartai Shiraghul Shirgugetu Subetei Suyiketu Taghai Tamachi Targhutai Temuge Temujin Temur
+			Todogen Toghoril Toghtoga Tokhtamis Tolui Torolchi Tumen Uighurtai Ukhuna Usun Yedi Yegu Yeke Yesugei Yesunge Yokhunan Kadan Godan
+			Bukhatu_Salji Bukha_Khatagi Bodonchar_Munkhag BelgU_nU_tei BegU_nU_tei Baaridai Habich_Baghatur Jeguredei Menen_TU_dU_n Hachi_HU_lU_g Baishinkhor_Dogshin Chirhya_Lynhua
+			Chaujin_Ortagai Tumbinai_Setsen Sengun_Bilge Khabul Semsochule
 		}
-
 		female_names = {
-			Arway Bindu Bloh Dechontee Donyen Fahnlohnee Fortee
-			Garmenh Gblormehn Gborlormenh Gormenh Gorpue
-			Janjay Jayplo Kehper Korlu Korto Konah Kortolo Lurpu
-			Mardea Mayupleh Mehnmah Miata Monji
-			Nowa Nyamen Nyonontee Nyanpue Nyene-Dwe Nyonweh
-			Paye Pahn Poady Tardy Sorntee Suah Sundaymah
-			Tarloh Teenesee Tomah Wlejii Wloh Wlojii Yenplu Zoe
+			Aigiarn Al-Alta Alan Alan_Gua Altani Borte Botokhui Bulughan Chabi Chagur Chakha Checheyigen Chotan Conchaka Dokez Doregene Doquz Ebegei Goland Gurbesu Hogelun Holuikhan Ibakha
+			Khadagan Khogaghchin Khojin Khorijin Khugurchin Khulan Khutulan Khutulun Kokachin Mandukhai Mongoljin Nomolun Oghul Orbei Orqina Sokhatai Sorkhaghatani Tekine Temulun TO_regene Yesugun Yesui Hoelun
 		}
 		
+		dynasty_of_location_prefix = "dynnp_of"
 		founder_named_dynasties = yes
-		
+
 		ethnicities = {
-			10 = african
+			10 = asian
 		}
 	}
-	
-	guan = {
-		
-		color = hsv{ 0.025 0.55 0.7 }
-
-		cadet_dynasty_names = {
-			"dynn_Ntafo"
-			"dynn_Fanti"
-			"dynn_Kyerepong"
-			"dynn_Le"
-			"dynn_Ahanta"
-			"dynn_Obutu"
-			"dynn_Kpesi"
-			"dynn_Anyi"
-			"dynn_Brosa"
-			"dynn_Twifo"
-			"dynn_Akwamu"
-			"dynn_Doma"
-			"dynn_Winneba"
-			"dynn_Kade"
-			"dynn_Nsawan"
-			"dynn_Densu" #named after a river
-		}
-		dynasty_names = {
-			"dynn_Ntafo"
-			"dynn_Fanti"
-			"dynn_Kyerepong"
-			"dynn_Le"
-			"dynn_Ahanta"
-			"dynn_Obutu"
-			"dynn_Kpesi"
-			"dynn_Anyi"
-			"dynn_Brosa"
-			"dynn_Twifo"
-			"dynn_Akwamu"
-			"dynn_Doma"
-			"dynn_Winneba"
-			"dynn_Kade"
-			"dynn_Nsawan"
-			"dynn_Densu" #named after a river
-		}
-
-		male_names = {
-			Abere_Anyo Achangso Achulo Achintri Afiso Amabangye Amankwa Amati Amo_elema Amoma Aso_wura Ataawa Awale Awaare Awalekiye Awo_n_nche Awo_n_nka_nne Awo_omoto Awoshe Awoshie Ayinsah
-			Badoh Bakoaso Boreginkpr Banemu_eye Bangben Bashaso Benyepo_eye Bi_awur_bi Bin_ka Bonyangso Booma Bore Bore_chie Bore_ena_sa Bore_enye Bore_enyi-enchi Bore_nyekpe Boresa Bore_masa_alowe Bore_walae Bore_wo Bore_wu B_sha_anye
-			Chepura Daa_mato Dambatu Dari Dariche Dokilebi Dranaya Ebanyepo Ebo_eye Edonbone Edonkufo Ekomato Ekone_oto Ekoso Ekumpo Ekunfo Elempo Esapo Esa_ewoeboto Etimpo Ewanye Ewale Ewonye Ewunio Ewuntomah Ewura Eyri_modon
-			Footou Gbeadese Gyem_che Gyema_alela Jinapor Gyeowo Kakore Kanagbong Kanamo Kananmaluwe Kasha Keche_e-basa Kenyiti Keshie_eko Keshie_wale K_fantang Kginginfra Koji Kotochi Kowuribi Kramoase Kurabaso Kurayerito
-			Lempoche Lomashie Longefiye Longesai Maaman Mankpa Mankre Mantenso Mapoche Masa-agben Masape Matuamo Mbema
-			Nefa Njo_amonche Nkpamafo Nndefeso Ntoba Obosu Okonfo Owoshie Pumaya Safo Sha_moye Samafon Sorkowule Shung_nkpa
-			Techira Titi_aka Tuntunba Yomba
-		}
-
-		female_names = {
-			Awo Demba Doye Faaduma Fatim Fatoumata Malado Maram Mbodj Ndate Ndieumbeutt Ndoung Ndoye Sall Yalla Yumeyga
-		}
-		
-		founder_named_dynasties = yes
-		
-		ethnicities = {
-			10 = african
-		}
-	}
-	
 }
