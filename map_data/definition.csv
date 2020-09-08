@@ -1,0 +1,18 @@
+0;0;0;0;x;x;
+1;17;17;17;b_Aimia_Akinah_N;x;#Akinah, Dysian Aimia
+2;17;17;33;b_Aimia_Akinah_M;x; #Cremlington
+3;17;17;49;b_Aimia_Akinah_S;x;
+4;17;32;0;b_Aimia_IsleOfDawn_N;x;#Isle of Dawn, Dysian Aimia
+5;17;32;64;b_Aimia_IsleOfDawn_M;x;
+6;17;32;128;b_Aimia_IsleOfDawn_S;x;
+7;17;64;0;b_Aimia_Aimia_N_N;x; #Northern Aimia
+8;17;64;64;b_Aimia_Aimia_N_M;x;
+9;17;64;128;b_Aimia_Aimia_N_S;x;
+10;17;80;0;b_Aimia_Aimia_M_N;x; #Central Aimia
+11;17;80;64;b_Aimia_Aimia_M_M;x;
+12;17;80;128;b_Aimia_Aimia_M_S;x;
+13;17;96;0;b_Aimia_Aimia_S_NW;x; #Southern Aimia
+14;17;96;64;b_Aimia_Aimia_S_NE;x;
+15;17;96;128;b_Aimia_Aimia_S_SW;x;
+16;17;96;192;b_Aimia_Aimia_S_SE;x;
+17;17;96;255;b_Aimia_Aimia_S_Isles;x;

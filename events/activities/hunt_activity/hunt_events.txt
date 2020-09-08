@@ -6201,27 +6201,15 @@ hunt.4019 = {
 			name = hunt_outcome
 			add = 1
 		}
-
-		if = {
-			limit = {
-				scope:activity = {
-					any_in_list = {
-						variable = potential_hunt_participants
-						is_alive = yes
-					}
+		scope:activity = {
+			random_in_list = {
+				variable = potential_hunt_participants
+				limit = {
+					is_alive = yes
 				}
-			}
-			scope:activity = {
-				random_in_list = {
-					variable = potential_hunt_participants
-					limit = { is_powerful_vassal = yes }
-					alternative_limit = { is_alive = yes }
-					save_scope_as = hunting_courtier
+				alternative_limit = {
+					is_powerful_vassal = yes
 				}
-			}
-		}
-		else = {
-			random_courtier_or_guest = {
 				save_scope_as = hunting_courtier
 			}
 		}

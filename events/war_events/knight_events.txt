@@ -175,10 +175,6 @@ knights.0001 = {
 					has_trait = ambitious
 				}
 				modifier = {
-					factor = 2
-					has_culture = culture:norse
-				}
-				modifier = {
 					factor = 0.5
 					has_trait = content
 				}

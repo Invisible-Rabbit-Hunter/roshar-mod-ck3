@@ -1,0 +1,58 @@
+
+#e_Aimia = {
+#	980.1.1 = {
+#		holder = 6000000
+#	}
+#}
+
+k_Aimia = {
+	980.1.1 = {
+		holder = 6000000
+	}
+}
+
+
+d_Dysian_Aimia = {
+	980.1.1 = {
+		holder = 6000000
+	}
+}
+
+
+c_Akinah = {
+	980.1.1 = {
+		holder = 6000000
+	}
+}
+
+c_IsleOfDawn = {
+	980.1.1 = {
+		holder = 6000000
+	}
+}
+
+
+d_Siah_Aimia = {
+	980.1.1 = {
+		holder = 6000000
+	}
+}
+
+
+c_Aimia_N = {
+	980.1.1 = {
+		holder = 6000000
+	}
+}
+
+c_Aimia_M = {
+	980.1.1 = {
+		holder = 6000000
+	}
+}
+
+c_Aimia_S = {
+	980.1.1 = {
+		holder = 6000000
+	}
+}

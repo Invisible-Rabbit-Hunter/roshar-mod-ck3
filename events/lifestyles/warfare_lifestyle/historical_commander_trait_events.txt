@@ -389,10 +389,7 @@ historical_commander_trait.0004 = {
 		}
 		number_of_commander_traits < 3
 
-		OR = {
-			faith = faith:catholic
-			faith = faith:orthodox
-		}
+		always = no
 	}
 	
 
@@ -513,9 +510,7 @@ historical_commander_trait.0005 = {
 		}
 		number_of_commander_traits < 3
 
-		faith = {
-			religion_tag = islam_religion
-		}
+		always = no
 
 	}
 

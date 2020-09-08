@@ -6666,14 +6666,11 @@ yearly.9020 = {
 	right_portrait = scope:knight
 	
 	trigger = {
+		always = no
 		NOT = { has_character_flag = had_event_yearly_9020 }
 		NOT = { has_character_modifier = yearly_9020_personal_war_elephant }
 		is_available_adult = yes
 		is_at_war = no
-		number_maa_regiments_of_type = {
-			type = war_elephant
-			value > 0
-		}
 		exists = cp:councillor_marshal
 		any_knight = {
 			yearly_9020_knight_trigger = yes
@@ -6799,11 +6796,6 @@ yearly.9020 = {
 	
 	option = { #Release the Elephant
 		name = {
-			trigger = { religion = religion:hinduism_religion }
-			text = yearly.9020.d1
-		}
-		name = {
-			trigger = { NOT = { religion = religion:hinduism_religion } }
 			text = yearly.9020.d2
 		}
 		

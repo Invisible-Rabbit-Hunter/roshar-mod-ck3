@@ -1843,7 +1843,7 @@ feast_default.1013 = {
 			7 = {
 				desc = feast_default.1013.b.big_failure
 				send_interface_toast = {
-					title = feast_default.1013.b.big_failure
+					title = feast_default.1011.b.big_failure
 					left_icon = scope:guest_to_save
 					known_murder_effect = {
 						VICTIM = scope:guest_to_save
@@ -2796,7 +2796,21 @@ scripted_trigger feast_default_2006_trigger = {
 feast_default.2006 = {
 	type = character_event
 	title = feast_default.2006.t
-	desc = feast_default.2006.desc
+	desc = {
+		desc = feast_default.2006.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:befriending_guest = {
+						any_scheme = {
+							scheme_type = befriend
+						}
+					}
+				}
+				desc = feast_default.2006.desc_befriend
+			}
+		}
+	}
 	theme = feast_activity
 	left_portrait = {
 		character = scope:befriending_guest
@@ -5879,13 +5893,7 @@ feast_default.5005 = {
 		scope:activity.activity_owner = {
 			is_alive = yes
 			is_imprisoned = no
-			OR = {
-				culture = culture:greek
-				culture = culture:baranis
-				culture = culture:levantine
-				culture = culture:andalusian
-				culture = culture:egyptian
-			}
+			always = no
 		}
 	}
 

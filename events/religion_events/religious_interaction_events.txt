@@ -442,14 +442,6 @@ religious_interaction.1001 = {
 	title = {
 		first_valid = {
 			triggered_desc = {
-				trigger = {
-					faith = {
-						religion_tag = islam_religion
-					}
-				}
-				desc = religious_interaction.1001.t.fatwa
-			}
-			triggered_desc = {
 				trigger = { }
 				desc = religious_interaction.1001.t
 			}

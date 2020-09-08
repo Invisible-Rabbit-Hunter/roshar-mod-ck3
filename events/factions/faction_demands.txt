@@ -469,14 +469,6 @@ faction_demand.1001 = {
 			OR = {
 				is_ai = no
 				OR = {
-					#May not convert to an unreformed faith from a reformed one.
-					AND = {
-						is_ai = yes
-						scope:peasant_leader.faith = { has_doctrine = unreformed_faith_doctrine}
-						faith = {
-							NOT = { has_doctrine = unreformed_faith_doctrine }
-						}
-					}
 					#Must be converting from a low-fervour faith to a higher-fervour faith.
 					AND = {
 						is_ai = yes

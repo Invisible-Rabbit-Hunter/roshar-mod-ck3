@@ -2148,7 +2148,7 @@ yearly.4061 = {
 	}
 	
 	trigger = {
-		faith.religion = religion:islam_religion
+		always = no
 		NOT = { has_character_flag = had_event_yearly_4061 }
 		NOT = { has_character_modifier = useful_insights_modifier }
 	}
@@ -2313,7 +2313,7 @@ yearly.4071 = {
 	}
 	
 	trigger = {
-		faith.religion = religion:islam_religion
+		always = no
 		exists = cp:councillor_court_chaplain
 		NOT = { has_character_flag = had_event_yearly_4071 }
 		learning >= medium_skill_rating
@@ -2403,7 +2403,7 @@ yearly.4081 = {
 	left_portrait = scope:councillor
 	
 	trigger = {
-		faith.religion = religion:islam_religion
+		always = no
 		has_culture_group = culture_group:arabic_group
 		exists = cp:councillor_court_chaplain
 		NOT = { has_character_flag = had_event_yearly_4081 }
@@ -2524,14 +2524,6 @@ yearly.4091 = {
 	desc = {
 		desc = yearly.4091.desc_opening
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					any_realm_province = {
-						has_building = house_of_wisdom_01
-					}
-				}
-				desc = yearly.4091.desc_house
-			}
 			desc = yearly.4091.desc_no_house
 		}
 		desc = yearly.4091.desc
@@ -2540,7 +2532,7 @@ yearly.4091 = {
 	left_portrait = scope:ward
 	
 	trigger = {
-		faith.religion = religion:islam_religion
+		always = no
 		NOT = { has_character_flag = had_event_yearly_4091 }
 		any_relation = {
 			type = ward

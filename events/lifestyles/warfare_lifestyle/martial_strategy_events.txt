@@ -374,62 +374,6 @@ martial_strategy.2000 = {
 	title = martial_strategy.2000.t
 	desc = {
 		desc = martial_strategy.2000.start.desc
-		random_valid = {
-			triggered_desc = {
-				trigger = {
-					game_start_date >= 1066.10.15
-					location = { geographical_region = world_europe }
-				}
-				desc = martial_strategy.2000.hastings.desc
-			}
-			triggered_desc = {
-				trigger = {
-					location = {
-						NOR = {
-							geographical_region = world_india
-							geographical_region = world_steppe
-						}
-					}
-					NOT = { faith = { religion_tag = islam_religion } }
-				}
-				desc = martial_strategy.2000.tours.desc
-			}
-			triggered_desc = {
-				trigger = {
-					location = {
-						NOR = {
-							geographical_region = world_india
-							geographical_region = world_steppe
-						}
-					}
-					faith = { religion_tag = islam_religion }
-				}
-				desc = martial_strategy.2000.palaceofthemartyrs.desc #(tours but arabic name!)
-			}
-			triggered_desc = {
-				trigger = {
-					location = {
-						NOR = {
-							geographical_region = world_india
-							geographical_region = world_steppe
-						}
-					}
-				}
-				desc = martial_strategy.2000.catalaunianplains.desc #Not India/plains
-			}
-			desc = martial_strategy.2000.constantinople.desc
-			triggered_desc = {
-				trigger = {
-					location = {
-						NOR = {
-							geographical_region = world_europe
-							geographical_region = world_africa
-						}
-					}
-				}
-				desc = martial_strategy.2000.vapati.desc
-			}
-		}
 		desc = martial_strategy.2000.end.desc
 	}
 	theme = martial_strategy_focus
@@ -440,16 +384,7 @@ martial_strategy.2000 = {
 	left_portrait = root
 
 	trigger = {
-		NOR = {
-			has_character_flag = had_event_martial_strategy_2000
-			has_character_modifier = studied_the_battle_of_gaixia
-			has_character_modifier = studied_the_battle_of_red_cliffs
-			has_character_modifier = studied_the_battle_of_thermopylae
-			has_character_modifier = studied_the_battle_of_teutoburg_forest
-			has_character_modifier = studied_an_old_battle
-			has_character_modifier = studying_ancient_texts
-		}
-		NOT = { has_character_modifier = studied_an_old_battle }
+		always = no
 	}
 	
 
@@ -605,13 +540,6 @@ martial_strategy.2001 = {
 		hidden_effect = {
 			#Which battle did you read about?
 			random_list = {
-				1 = {
-					modifier = {
-						factor = 0
-						has_character_modifier = studied_the_battle_of_gaixia
-					}
-					set_variable = { name = ancient_battle value = flag:gaixia }
-				}
 				1 = {
 					modifier = {
 						factor = 0

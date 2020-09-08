@@ -3242,7 +3242,7 @@ yearly.3051 = {
 scripted_trigger yearly_3061_county_trigger = {
 	tier = tier_county
 	title_province = {
-		geographical_region = special_cagot_region
+		always = no
 	}
 	faith = root.faith
 }
@@ -3279,7 +3279,7 @@ yearly.3061 = {
 	trigger = {
 		is_ai = no
 		NOT = { exists = global_var:had_cagot_event }
-		religion = religion:christianity_religion
+		always = no
 		any_held_title = {
 			yearly_3061_county_trigger = yes
 		}

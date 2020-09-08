@@ -2305,14 +2305,7 @@ birth.3022 = {
 	#NO NAMING WIDGET
 
 	option = {
-		name = {
-			trigger = { NOT = { faith = { religion_tag = buddhism_religion } } }
-			text = birth.3022.a
-		}
-		name = {
-			trigger = { faith = { religion_tag = buddhism_religion } }
-			text = birth.3022.a.buddhism
-		}
+		name = birth.3022.a
 		add_stress = medium_stress_gain
 	}
 }
@@ -2630,30 +2623,10 @@ birth.8011 = {
 	hidden = yes
 	
 	trigger = {
-		any_parent = {
-			OR = {
-				has_title = title:e_byzantium	#Must be the current emperor.
-				has_title = title:e_roman_empire	#Or the other emperor.
-			}
-			capital_county = title:c_byzantion	#Must rule from the Bucoleon Palace.
-		}
-		mother = {
-			OR = {
-				AND = {	#Landless mothers must be actually at court to use the chamber.
-					is_ruler = no
-					location = title:c_byzantion.title_province
-				}
-				AND = {	#Landed rulers can be assumed to make the journey, unless they have some extremely pressing reason not to.
-					is_ruler = yes
-					NOT = { is_at_war_with = root.father }
-				}
-			}
-			is_imprisoned = no	#Cannot use the purple chamber from prison.
-			is_commanding_army = no	#Cannot use the purple chamber whilst commanding an army.
-		}
+		always = no
 	}
 
-	immediate = { add_trait = born_in_the_purple }
+	immediate = {  }
 }
 
 
@@ -3337,117 +3310,6 @@ birth.9002 = {
 						}
 					}
 				}
-				1 = { #Religious names
-					trigger = {
-						scope:suggester = { ai_zeal > 0 }
-						scope:child = {
-							OR = {
-								faith = { religion_tag = germanic_religion }
-								faith = { religion_tag = christianity_religion }
-							}
-						}
-					}
-					modifier = {
-						scope:suggester = { ai_zeal >= medium_positive_ai_value }
-						factor = 5
-					}
-					random_list = {
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									faith = { religion_tag = germanic_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Thor }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									faith = { religion_tag = germanic_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Balder }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									faith = { religion_tag = germanic_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Odin }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_female = yes
-									faith = { religion_tag = germanic_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Freja }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_female = yes
-									faith = { religion_tag = germanic_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Idun }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_female = yes
-									faith = { religion_tag = germanic_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Frigg }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									faith = { religion_tag = christianity_religion }
-								}	
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Peter } #Apostle
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									faith = { religion_tag = christianity_religion }
-								}	
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Paul } #Apostle
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									faith = { religion_tag = christianity_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:John } #Apostle
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_female = yes
-									faith = { religion_tag = christianity_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Maria } #Holy virgin
-						}
-					}
-					save_scope_value_as = {
-						name = name_type
-						value = flag:religious
-					}
-				}
 				20 = { #Lunatic names
 					trigger = { scope:suggester = { has_trait = lunatic } }
 					random_list = {
@@ -3599,64 +3461,9 @@ birth.9002 = {
 				20 = {
 					trigger = { scope:suggester = { has_trait = possessed } }
 					random_list = {
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									OR = {
-										faith = { religion_tag = christianity_religion }
-										faith = { religion_tag = judaism_religion }
-									}
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Satan }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									OR = {
-										faith = { religion_tag = christianity_religion }
-										faith = { religion_tag = judaism_religion }
-									}
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Beelzebub }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_female = yes
-									OR = {
-										faith = { religion_tag = christianity_religion }
-										faith = { religion_tag = judaism_religion }
-									}
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Lilith }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_male = yes
-									faith = { religion_tag = islam_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Iblis }
-						}
-						1 = {
-							trigger = {
-								scope:child = {
-									is_female = yes
-									faith = { religion_tag = germanic_religion }
-								}
-							}
-							save_scope_value_as = { name = name_suggestion value = flag:Hel }
-						}
 						1 = { save_scope_value_as = { name = name_suggestion value = flag:Deceiver } }
 						1 = { save_scope_value_as = { name = name_suggestion value = flag:Whisperer } }
 						1 = { save_scope_value_as = { name = name_suggestion value = flag:Reaper } }
-						1 = { save_scope_value_as = { name = name_suggestion value = flag:Tengil } }
 						1 = { save_scope_value_as = { name = name_suggestion value = flag:Katla } }
 					}
 					save_scope_value_as = {

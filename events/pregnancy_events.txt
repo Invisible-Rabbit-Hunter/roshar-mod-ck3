@@ -44,7 +44,10 @@ pregnancy.0001 = {
 				modifier = {
 					factor = 2 # Religious doctrine focusing on providing a sanitary birthing chamber and supplied should have a substantial impact on birth complications.
 					faith = {
-						has_doctrine = tenet_sacred_childbirth
+						OR = {
+							has_doctrine = tenet_sacred_childbirth
+							has_doctrine = tenet_mother_goddess
+						}
 					}
 				}
 				#More likely if the Dynasty has the Kin legacy
